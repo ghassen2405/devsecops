@@ -1,5 +1,5 @@
 # Use OpenJDK for Java app
-FROM openjdk:21
+FROM openjdk:26-ea-23-jre-alpine
 
 # Set working directory
 WORKDIR /app
