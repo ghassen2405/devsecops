@@ -1,5 +1,5 @@
 # Use OpenJDK for Java app
-FROM openjdk:21-jre-alpine
+FROM eclipse-temurin:21-jre-alpine
 
 # Set working directory
 WORKDIR /app
