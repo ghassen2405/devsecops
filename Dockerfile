@@ -1,5 +1,5 @@
 # Use OpenJDK for Java app
-FROM openjdk:17
+FROM openjdk:21
 
 # Set working directory
 WORKDIR /app
@@ -8,7 +8,7 @@ WORKDIR /app
 COPY target/*.jar app.jar
 
 # Expose port
-EXPOSE 8080
+EXPOSE 8081
 
 # Run the app
 ENTRYPOINT ["java", "-jar", "app.jar"]
