@@ -16,14 +16,13 @@ import java.util.List;
 public class BlocRestController {
     @Autowired
     IBlocService blocService;
-    // http://localhost:8089/tpfoyer/bloc/retrieve-all-blocs dsqfgh
+    // http://localhost:8089/tpfoyer/bloc/retrieve-all-blocs ghgh
     @GetMapping("/retrieve-all-blocs")
     public List<Bloc> getBlocs() {
         List<Bloc> listBlocs = blocService.retrieveAllBlocs();
         return listBlocs;
     }
-    // http://localhost:8089/tpfoyer/bloc/retrieve-bloc/8
-    @GetMapping("/retrieve-bloc/{bloc-id}")
+    // http://localhost:8089/tpfoyer/bloc/retrieve-bloc/8ghhg
     public Bloc retrieveBloc(@PathVariable("bloc-id") Long blId) {
         Bloc bloc = blocService.retrieveBloc(blId);
         return bloc;
