@@ -16,7 +16,7 @@ import java.util.List;
 public class BlocRestController {
     @Autowired
     IBlocService blocService;
-    // http://localhost:8089/tpfoyer/bloc/retrieve-all-blocs
+    // http://localhost:8089/tpfoyer/bloc/retrieve-all-blocs dsqfgh
     @GetMapping("/retrieve-all-blocs")
     public List<Bloc> getBlocs() {
         List<Bloc> listBlocs = blocService.retrieveAllBlocs();
